@@ -7,21 +7,6 @@ baseurl: ""
 markdown: kramdown
 highlighter: rouge
 
-# Collections
-collections_dir: .
-collections:
-  posts:
-    output: true
-    permalink: /posts/:slug/
-
-# Defaults
-defaults:
-  - scope:
-      path: "posts"
-      type: "posts"
-    values:
-      layout: "post"
-
 # Exclude files
 exclude:
   - README.md
