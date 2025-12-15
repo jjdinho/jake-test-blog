@@ -1,0 +1,28 @@
+# Jekyll configuration for jake test blog
+title: jake test blog
+description: A blog managed by CLI Blog
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections_dir: .
+collections:
+  posts:
+    output: true
+    permalink: /posts/:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitkeep
