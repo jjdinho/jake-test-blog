@@ -7,6 +7,18 @@ baseurl: ""
 markdown: kramdown
 highlighter: rouge
 
+# Post permalink structure
+permalink: /posts/:slug/
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+
+
 # Exclude files
 exclude:
   - README.md
